@@ -1,0 +1,1 @@
+jCrypt is an attempt to create j2ee library/engine for handling cryptocoins operations
