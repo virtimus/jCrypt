@@ -16,6 +16,8 @@ import org.jcrypt.InsufficientMoneyException;
 
 import java.io.File;
 
+import javax.ws.rs.Path;
+
 /*import com.google.bitcoin.core.*;
 import com.google.bitcoin.crypto.KeyCrypterException;
 import com.google.bitcoin.kits.WalletAppKit;
@@ -36,6 +38,7 @@ import static com.google.common.base.Preconditions.checkNotNull;*/
  * ForwardingService demonstrates basic usage of the library. It sits on the network and when it receives coins, simply
  * sends them onwards to an address given on the command line.
  */
+
 public class ForwardingService {
 	private static final Log log = LogFactory.getLog(ForwardingService.class);
 	private static INetwork network;

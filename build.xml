@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="jCrypt" default="deploy-WEB">
+
+<property environment="env"/>
+	
+<property file="build.properties"/>	
+
+<echo message=" version: ${version} "/>
+		
+	<target name="deploy-WEB" depends="" description="Deploy WEB">
+		<copy overwrite="yes" file="${jcrypt.dir}/jCryptWEB/target/jCryptWEB.war" toFile="${jboss.dir.deployments}/jCrypt.war"/>	
+	</target>
+	
+	<target name="deploy-EAR" depends="" description="Deploy EAR">
+		<copy overwrite="yes" file="${jcrypt.dir}/jCryptEAR/target/jCryptEAR.ear" toFile="${jboss.dir.deployments}/jCryptEAR.ear"/>	
+	</target>		
+			
+	
+</project>
